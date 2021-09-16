@@ -32,7 +32,7 @@ This new assignment consists of three technical analysis deliverables and a prop
 •	Software: RStudio and R
 
 <p align="center">
-  <img width="200" height="200" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2013.jpg">
+  <img width="100" height="100" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2013.jpg">
 </p>
 
 ##  1. Linear Regression to Predict MPG
@@ -77,19 +77,19 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 The dataframe:
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%204.png">
+  <img width="400" height="400" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%204.png">
 </p>
 
 4.	Write an RScript that creates a lot_summary dataframe using the group_by() and the summarize() functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column. The lot_summary dataframe:
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%205.jpg">
+  <img width="400" height="100" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%205.jpg">
 </p>
 
 
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%206.jpg">
+  <img width="500" height="200" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%206.jpg">
 </p>
 
 The Suspension Coil dataset provided for the MechaCar contains the results of testing the weight capacities of multiple suspension coils from multiple production lots to determine consistency.
@@ -97,20 +97,20 @@ At first all manufacturing lots:
 
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%207.jpg">
+  <img width="500" height="100" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%207.jpg">
 </p>
 
 Diving a little deeper into each of the 3 lots:
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%208.jpg">
+  <img width="600" height="200" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%208.jpg">
 </p>
 
 With the understanding that the design specifications for the MechaCar suspension coils mandate that the variance of the suspension coils cannot exceed 100 pounds per square inch (PSI) .
 Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 When looking at the entire population of the production lot, the variance of the coils is 62.29 PSI, which is well within the 100 PSI variance requirement.
 Similarly, but significantly more consistent, Lot 1 and Lot 2 are well within the 100 PSI variance requirement; with variances of 0.98 and 7.47 respectively. However, it is Lot 3 that is showing much larger variance in performance and consistency, with a variance of 170.29. It is Lot 3 that is disproportionately causing the variance at the full lot level.  This very simple boxplot illustrates the differences between the lots:
-9
+
 <p align="center">
   <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%209.jpg">
 </p>
@@ -122,20 +122,23 @@ Using your knowledge of R, perform t-tests to determine if all manufacturing lot
 
 1.	In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
 2. Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+3. 
 •	An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population
+
 •	An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population
+
 •	There is a summary of the t-test results across all manufacturing lots and for each lot
 
 The next step is to conduct a t-test on the suspension coil data to determine whether there is a statistical difference between the mean of this provided sample dataset and a hypothesized, potential population dataset. Using the presumed population mean of 1500, we find the following:
 Summary of the t-test results across all manufacturing lots: 
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2010.jpg">
+  <img width="300" height="200" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2010.jpg">
 </p>
 From here we can see the true mean of the sample is 1498.78, which we also saw in the summary statistics above. With a p-Value of 0.06, which is higher than the common significance level of 0.05, there is NOT enough evidence to support rejecting the null hypothesis. That is to say, the mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500.
 
 <p align="center">
-  <img width="400" height="300" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2011.jpg">
+  <img width="300" height="400" src="https://github.com/jacquie0583/MechaCar_Statistical_Analysis/blob/main/image%2011.jpg">
 </p>
 
 Next looking at each individual lots:
@@ -148,33 +151,47 @@ Something went awry in Lot 3's production cycle. The process needs to be checked
 Requirements:
 Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 The statistical study design has the following:
+
 •	A metric to be tested is mentioned
+
 •	A null hypothesis or an alternative hypothesis is described
+
 •	A statistical test is described to test the hypothesis
 
 This study would involve collecting data on MechaCar and its comparable models across several different manufacturers over the last 3 years.
+
 •	What are the competitions' comparable models,
+
 •	Which cars will MechaCar be competing with head-to-head? which cars will be included in the study?
+
 •	Which factors will look at the study to determine the relevant to selling price?
 
-####  Metrics
+###  Metrics
 Collecting data for comparable models across all major manufacturers for past 3 years for the following metrics:
 
 •	Safety Feature Rating: Independent Variable
+
 •	Current Price (Selling): Dependent Variable
+
 •	Drive Package : Independent Variable
+
 •	Engine (Electric, Hybrid, Gasoline / Conventional): Independent Variable
+
 •	Resale Value: Independent Variable
+
 •	Average Annual Cost of ownership (Maintenance): Independent Variable
+
 •	MPG (Gasoline Efficiency): Independent Variable
 
-####  Hypothesis: Null and Alternative
+
+###  Hypothesis: Null and Alternative
 After determining which factors are key for the MechaCar's genre:
 
 •	Null Hypothesis (Ho): MechaCar is priced correctly based on its performance of key factors for its genre.
+
 •	Alternative Hypothesis (Ha): MechaCar is NOT priced correctly based on performance of key factors for its genre.
 
-####  Statistical Tests
+### Statistical Tests
 A multiple linear regression would be used to determine the factors that have the highest correlation/predictability with the list selling price (dependent variable); which combination has the greatest impact on price (it may be all of them!)
 
 
