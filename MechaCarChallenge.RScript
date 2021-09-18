@@ -1,7 +1,0 @@
-library(dplyr)
-
-MechaCar_mpg.csv <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
-
-MechaCar_mpg.csv(head)
-
-lm()
