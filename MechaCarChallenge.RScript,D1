@@ -1,2 +1,0 @@
-##Pearson Coeffient 
-cor(MechaCar_mpg.csv$mpg,MechaCar_mpg.csv$vehicle_length) #calculate correlation coefficient
